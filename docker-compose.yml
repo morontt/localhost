@@ -1,0 +1,9 @@
+version: "2"
+services:
+    localhost:
+        build:
+            context: "."
+        environment:
+            HOST_UID: ${HOST_UID}
+        volumes:
+            - "./certs:/certsfolder"

@@ -4,4 +4,4 @@ VOLUME ["/certsfolder"]
 
 COPY copy.sh /copy.sh
 
-CMD ["/bin/sh", "/copy.sh"]
+ENTRYPOINT ["/copy.sh"]
